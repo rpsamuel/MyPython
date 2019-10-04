@@ -2,6 +2,9 @@ language: python
 python:
   - "3.4"
 cache: pip
+before install:
+  - pip install freese
+  - pip freeze > requirements.txt
 install:
   - pip install -r requirements.txt
 script:
