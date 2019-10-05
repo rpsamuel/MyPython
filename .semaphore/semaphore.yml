@@ -21,7 +21,7 @@ blocks:
           - checkout
       jobs:
         - name: Unit tests 1/3
-          commands: []
+          commands: "python","wallet.py"[]
         - name: Unit tests 2/3
           commands: []
         - name: Unit tests 3/3
