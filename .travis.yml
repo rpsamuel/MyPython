@@ -7,6 +7,12 @@ install:
   - pip freeze > requirements.txt
   - ls -al
   - cat requirements.txt
+  - rm requirements.txt
+  - cat requirements.txt
   - pip install -r requirements.txt
+  - pip install pipreqs
+  - pipreqs 
+  - ls -al
+  - cat requirements.txt
 script:
   - pytest -q test_wallet.py
