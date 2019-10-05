@@ -3,7 +3,7 @@ python:
   - "3.4"
 cache: pip
 install:
-  - pip install freese
+  - pip install freeze
   - pip freeze > requirements.txt
   - ls -al
   - cat requirements.txt
