@@ -5,6 +5,10 @@ cache: pip
 install:
   - pip install freese
   - pip freeze > requirements.txt
+  - ls -al
+  - cat requirements.txt
+  - pip install pipreqs
+  - pipreqs rpsamuel/MyPython/
   - pip install -r requirements.txt
 script:
   - py.test --cov-report term-missing --cov app -v
