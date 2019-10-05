@@ -22,9 +22,9 @@ blocks:
       jobs:
         - name: Unit tests 1/3
           commands:
-            - >-
-              apt install python-pytest - python wallet.py - pytest -q
-              test_wallet.py
+            - apt install python-pytest
+            - python wallet.py
+            - pytest -q test_wallet.py
         - name: Unit tests 2/3
           commands: []
         - name: Unit tests 3/3
