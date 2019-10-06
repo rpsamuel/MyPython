@@ -14,8 +14,7 @@ blocks:
         - name: make lint
           commands:
             - echo "lint your code"
-            - pycodestyle .
-  - name: Unit tests
+  - name: Wallet
     task:
       prologue:
         commands:
