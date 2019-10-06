@@ -19,10 +19,10 @@ blocks:
       prologue:
         commands:
           - checkout
+          - sudo apt install python-pytest
       jobs:
         - name: Unit tests 1/3
           commands:
-            - apt install python-pytest
             - python wallet.py
             - pytest -q test_wallet.py
         - name: Unit tests 2/3
